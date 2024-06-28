@@ -172,6 +172,9 @@ img {
 .h100vh{
     height: 100vh;
 }
+.h80vh{
+    height: 80vh;
+}
 .w550px{
     width: 34.375rem;
 }
@@ -191,6 +194,23 @@ img {
     height: 4rem;
 }
 
+.p_indicadores{
+    padding: 2rem 1rem;
+}
+
+
+.mb-160px{
+    margin-bottom: 10rem;
+}
+.pt_100px{
+    padding-top: 6.25rem;
+}
+.pb_80px{
+    padding-bottom: 5rem;
+}
+.t-80px{
+    top: -5rem;
+}
 /*Background*/
 .bg-primario{
     background-color: var(--primario);
@@ -239,6 +259,14 @@ img {
 
 .list-footer{
    list-style: none; 
+}
+
+.testimonial_pick{
+    width: 150px; 
+    height: 150px;
+}
+.brightness_7{
+    filter: brightness(0.7)
 }
 
 .border-secundario{
@@ -320,3 +348,40 @@ img {
     left: unset;
      bottom: 60px !important;
  }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta el máximo ancho del contenedor según tu diseño */
+    margin: 0 auto;
+}
+#videoPlayer {
+    width: 100%;
+}
+.play-button {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+section {
+    margin-top: 20px;
+}
+
+.kgcih_caption{
+    bottom: 10rem; left: 5%;
+}
+.btn_mr{
+    margin-right: 15rem;
+}
