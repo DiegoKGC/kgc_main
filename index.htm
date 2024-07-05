@@ -15,10 +15,10 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-primario">
+    <nav class="navbar navbar-expand-lg bg-primario sticky-top">
         <div class="container-fluid">
             <div class="">
-                <a class="navbar-brand text-white" href="#"><img src="img/logos/logo_kgcih.jpg" alt="icon_arrow"></a>
+                <a class="navbar-brand text-white d-none" href="#"><img src="img/logos/logo_kgcih.jpg" alt="icon_arrow"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
             </div>
             <div class="d-flex flex-column w-100">
                 <div class="d-flex justify-content-between">
-                    <div class="d-flex ">
+                    <div class="d-flex d-none">
                         <div class="ps-3">
                             <img class="w-24px" src="img/icons/time.svg" alt="icon_arrow">
                             <span class="ps-2 text-white">09:00 AM - 06:00 PM</span>
@@ -38,7 +38,7 @@
                                 <span class="ps-2 text-white">Corregidora, Qro.</span>
                             </div>
                         </a>
-                        <a class="text-decoration-none" href="tel:+524422535219" target="_blank" rel="nofollow">
+                        <a class="text-decoration-none" href="tel:+524425924870" target="_blank" rel="nofollow">
                             <div class="ps-3">
                                 <img class="w-24px" src="img/icons/phone.svg" alt="icon_arrow">
                                 <span class="ps-2 text-white">4422535219</span>
@@ -56,23 +56,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item pe-3">
-                                <a class="nav-link OswaldRegular fs_20px text-white active" aria-current="page" href="#Formulario">Inicio</a>
+                                <a class="nav-link OswaldRegular fs_20px text-white active" aria-current="page" href="#Inicio">Inicio</a>
                             </li>
                             <li class="nav-item pe-3">
-                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Formulario">Acerca de Nosotros</a>
+                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Caracteristicas">Características</a>
                             </li>
                             <li class="nav-item pe-3">
-                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Formulario">Servicios</a>
+                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Servicios">Servicios</a>
                             </li>
                             <li class="nav-item pe-3">
-                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Formulario">Características</a>
+                                <a class="nav-link OswaldRegular fs_20px text-white" href="#Nosotros">Acerca de Nosotros</a>
                             </li>
                             <li class="nav-item pe-3">
                                 <a class="nav-link OswaldRegular fs_20px text-white" href="#Formulario">Contáctenos</a>
                             </li>
                         </ul>
-                        
-                        <a class="btn btn-primary bg-secundario text-black OswaldRegular fs_20px btn_mr"  href="#Formulario" target="_blank" >Cotizar Ahora <img class="w-32px" src="img/icons/right-arrow-bk.svg" alt="icon_arrow"></a>
+                        <a class="btn btn-primary bg-secundario text-black OswaldRegular fs_20px btn_mr"  href="#Formulario">Cotizar Ahora <img class="w-32px" src="img/icons/right-arrow-bk.svg" alt="icon_arrow"></a>
                         
                     </div>
                 </div>
@@ -81,26 +80,21 @@
     </nav>
 
     <div class="container-fluid p-0">
-        <header>
+        <header id="Inicio">
             <div class="h80vh">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <!-- <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div> -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="img/bg/terrestre.jpeg" class="d-block w-100 brightness_7" alt="servicios Terrestres">
-                        <div class="carousel-caption d-none d-md-block kgcih_caption">
+                        <div class="carousel-caption d-md-block kgcih_caption">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-12 col-md-7">
                                         <h1 class="text-white fs_64px OswaldBold text-start text-shadow-title">Transportación <span class="text-secundario">Terrestre</span> </h1>
                                         <p class="text-start fs_24px OswaldRegular">Manejamos varias modalidades de transportación terrestre y servicios de logística general</p>
                                         <div class="d-flex">
-                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="">Contacto </a>
-                                            <a class="btn btn-primary OswaldRegular fs_20px" href="">Soporte</a>
+                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="#Formulario">Contacto </a>
+                                            <a class="btn btn-primary OswaldRegular fs_20px" href="tel:+524425924870">Soporte</a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,15 +103,15 @@
                       </div>
                       <div class="carousel-item">
                         <img src="img/bg/hero-slider-hero-slider3.jpeg" class="d-block w-100 brightness_7" alt="Servicios Aéreos">
-                        <div class="carousel-caption d-none d-md-block kgcih_caption">
+                        <div class="carousel-caption d-md-block kgcih_caption">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-12 col-md-7">
                                         <h1 class="text-white fs_64px OswaldBold text-start text-shadow-title">Servicios <span class="text-secundario"></span> Aéreos</h1>
                                         <p class="text-start fs_24px OswaldRegular">Ofrecemos Servicios Aéreos en los principales aeropuertos de nivel nacional y mundial. </p>
                                         <div class="d-flex">
-                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="">Contacto </a>
-                                            <a class="btn btn-primary OswaldRegular fs_20px" href="">Soporte</a>
+                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="#Formulario">Contacto </a>
+                                            <a class="btn btn-primary OswaldRegular fs_20px" href="tel:+524425924870">Soporte</a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,15 +120,15 @@
                       </div>
                       <div class="carousel-item">
                         <img src="img/bg/buque.jpeg" class="d-block w-100 brightness_7" alt="Servicios Marítimos">
-                        <div class="carousel-caption d-none d-md-block kgcih_caption" >
+                        <div class="carousel-caption d-md-block kgcih_caption" >
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-12 col-md-7">
                                         <h1 class="text-white fs_64px OswaldBold text-start text-shadow-title">Servicios <span class="text-secundario">Marítimos</span> y Terminales </h1>
                                         <p class="text-start fs_24px OswaldRegular">Ofrecemos las Mejores Tarifas, mediante un pool de volumen y beneficios con terminales a Nivel Nacional. </p>
                                         <div class="d-flex">
-                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="">Contacto </a>
-                                            <a class="btn btn-primary OswaldRegular fs_20px" href="">Soporte</a>
+                                            <a class="btn btn-secondary OswaldRegular fs_20px me-2" href="#Formulario">Contacto </a>
+                                            <a class="btn btn-primary OswaldRegular fs_20px" href="tel:+524425924870">Soporte</a>
                                         </div>
                                     </div>
                                 </div>
@@ -153,17 +147,19 @@
         </header>
     </div>
     
-    <main class="d-block">
-        <section class="seccion">
+    <main id="Caracteristicas" class="d-block">
+        <section  class="seccion">
             <div class="container">
                 <span class="OswaldBold fs_30px">Características</span>
                 <h3 class="RobotoMedium fs_32px pb-3">Impulsado por nuestros Socios Especiales</h3>
                 <div class="row">
-                    <div class="col-3">
-                        <div class="card p-3 box-shadow-md">
-                            <img class="w100px" src="img/icons/paleta.gif" alt="icono de Almacenes">
-                            <span class="fs_20px OswaldBold text-black my-3">Almacén</span>
-                            <p class="pb-3"> Descubra nuestros <strong> Almacenes Built to Suit</strong>, diseñados para adaptarse perfectamente a sus necesidades. Ofrecemos <strong>soluciones integrales</strong> que incluyen y equipo especializado.</p>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card p-3 box-shadow-md cat-box">
+                            <div class="">
+                                <img class="w100px" src="img/icons/paleta.gif" alt="icono de Almacenes">
+                                <span class="fs_20px OswaldBold text-black my-3">Almacén</span>
+                                <p class="pb-3"> Descubra nuestros <strong> Almacenes Built to Suit</strong>, diseñados para adaptarse perfectamente a sus necesidades. Ofrecemos <strong>soluciones integrales</strong> que incluyen y equipo especializado.</p>
+                            </div>
                             <a class="text-start btn btn-carateristicas RobotoMedium position-relative">
                                 <span>Más información</span> 
                                 <div class="icon-arrow rounded-circle bg-primario position-absolute ">
@@ -173,11 +169,13 @@
                         </div>
                     </div>
                     
-                    <div class="col-3">
-                        <div class="card p-3 box-shadow-md">
-                            <img class="w100px" src="img/icons/soporte.gif" alt="icono de Soporte 24-7">
-                            <span class="fs_20px OswaldBold text-black my-3">Soporte 24/7</span>
-                            <p class="pb-3">Soporte 24/7 gestionado <strong>directamente por nuestro personal</strong>, opciones de <strong>personal in situ</strong> para satisfacer las necesidades específicas de su empresa.</p>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card p-3 box-shadow-md cat-box">
+                            <div class="">
+                                <img class="w100px" src="img/icons/soporte.gif" alt="icono de Soporte 24-7">
+                                <h4 class="fs_20px OswaldBold text-black my-3">Soporte 24/7</h4>
+                                <p class="pb-3">Soporte 24/7 gestionado <strong>directamente por nuestro personal</strong>, opciones de <strong>personal in situ</strong> para satisfacer las necesidades específicas de su empresa.</p>
+                            </div>
                             <a class="text-start btn btn-carateristicas RobotoMedium position-relative">
                                 <span>Más información</span> 
                                 <div class="icon-arrow rounded-circle bg-primario position-absolute ">
@@ -186,11 +184,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card p-3 box-shadow-md">
-                            <img class="w100px" src="img/icons/ruta.gif" alt="icono de Ruta Inteligente">
-                            <span class="fs_20px OswaldBold text-black my-3">Rastreo en línea</span>
-                            <p class="pb-3"> Desarrollar una torre de control no es una tarea sencilla. <strong>Contamos con el personal y la experiencia necesarios</strong>  para llevar a cabo sus proyectos logísticos.</p>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card p-3 box-shadow-md cat-box">
+                            <div class="">
+                                <img class="w100px" src="img/icons/ruta.gif" alt="icono de Ruta Inteligente">
+                                <h4 class="fs_20px OswaldBold text-black my-3">Rastreo en línea</h4>
+                                <p class="pb-3"> Desarrollar una torre de control no es una tarea sencilla. <strong>Contamos con el personal y la experiencia necesarios</strong>  para llevar a cabo sus proyectos logísticos.</p>
+                            </div>
                             <a class="text-start btn btn-carateristicas RobotoMedium position-relative">
                                 <span>Más información</span> 
                                 <div class="icon-arrow rounded-circle bg-primario position-absolute ">
@@ -199,11 +199,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card p-3 box-shadow-md">
-                            <img class="w100px" src="img/icons/escudo.gif" alt="icono de Seguro de Cargo">
-                            <span class="fs_20px OswaldBold text-black my-3">Seguro de Cargo</span>
-                            <p class="pb-3">Nos esforzamos por ofrecer seguros con las <strong>mejores tarifas del mercado y contratos flexibles</strong>, adaptados a sus necesidades: ya sea por evento, mensuales, anuales.</p>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card p-3 box-shadow-md cat-box">
+                            <div class="">
+                                <img class="w100px" src="img/icons/escudo.gif" alt="icono de Seguro de Cargo">
+                                <h4 class="fs_20px OswaldBold text-black my-3">Seguro de Cargo</h4>
+                                <p class="pb-3">Nos esforzamos por ofrecer seguros con las <strong>mejores tarifas del mercado y contratos flexibles</strong>, adaptados a sus necesidades: ya sea por evento, mensuales, anuales.</p>
+                            </div>
                             <a class="text-start btn btn-carateristicas RobotoMedium position-relative">
                                 <span>Más información</span> 
                                 <div class="icon-arrow rounded-circle bg-primario position-absolute ">
@@ -216,7 +218,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="d-none d-lg-block">
             <div class="bg-tacker">
                 <div class="container-fluid h-100">
                     <div class="row row-cols-5 h-100">
@@ -243,17 +245,51 @@
                         <div class="col step d-flex flex-column justify-content-end border-smart pb_80px">
                             <span class="text-secundario OswaldSemi fs_32px">T</span>
                             <h4 class="text-white OswaldBold fs_26px">De duración limitada</h4>
-                            <p class="text-white hidden-text"> Establece un plazo específico para lograr el objetivo, lo que proporciona un sentido de urgencia y define claramente el marco temporal para la implementación y medición del progreso.</p>
+                            <p class="text-white hidden-text">Establece un plazo específico para lograr el objetivo, lo que proporciona un sentido de urgencia y define claramente el marco temporal para la implementación y medición del progreso.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <Section class="d-lg-none ">
+            <div class="bg-tacker">
+                <div class="container-fluid bg-blackout">
+                    <div class="row p-3">
+                        <div class="col-12 pt-3">
+                            <img class="w-32px" src="img/icons/smart/S.svg" alt="">
+                            <span class="text-white OswaldBold fs_20px ps-2">Específico</span>
+                            <p class="text-white pt-3" >En lugar de establecer un objetivo general como "mejorar la entrega", se especifica claramente qué se quiere lograr y en qué medida.</p>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <img class="w-32px" src="img/icons/smart/M.svg" alt="">
+                            <span class="text-white OswaldBold fs_20px ps-2">Medible </span>
+                            <p class="text-white pt-3" >El objetivo se puede cuantificar y evaluar con datos concretos, como la implementación de tecnología de rastreo que permita medir la eficiencia de los procesos de entrega.</p>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <img class="w-32px" src="img/icons/smart/A.svg" alt="">
+                            <span class="text-white OswaldBold fs_20px ps-2">Alcanzable</span>
+                            <p class="text-white pt-3">Se establece un objetivo que es realista y alcanzable con los recursos y capacidades disponibles, como la formación del personal en métodos probados para mejorar la eficiencia de las rutas de entrega.</p>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <img class="w-32px" src="img/icons/smart/R.svg" alt="">
+                            <span class="text-white OswaldBold fs_20px ps-2">Realista</span>
+                            <p class="text-white pt-3">El objetivo está alineado con las metas generales de la empresa, como la sostenibilidad ambiental, lo que lo hace relevante para la estrategia empresarial a largo plazo.</p>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <img class="w-32px" src="img/icons/smart/T.svg" alt="">
+                            <span class="text-white OswaldBold fs_20px ps-2">De duración limitada</span>
+                            <p class="text-white pt-3">Establece un plazo específico para lograr el objetivo, lo que proporciona un sentido de urgencia y define claramente el marco temporal para la implementación y medición del progreso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
         <section class="py-3">
             <div class="container">
                 <div class="row bg-secundario p_indicadores">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
                         <div class="d-flex">
                             <div class="num">
                                 <span class="fs_48px OswaldBold" >1547</span>
@@ -261,7 +297,7 @@
                             <span class="RobotoRegular fs_22px pt-2 ps-2">Our Happy <br>Clients</span>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
                         <div class="d-flex">
                             <div class="num">
                                 <span class="fs_48px OswaldBold">1547</span>
@@ -269,7 +305,7 @@
                             <span class="RobotoRegular fs_22px pt-2 ps-2">Our Happy <br>Clients</span>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
                         <div class="d-flex">
                             <div class="num">
                                 <span class="fs_48px OswaldBold">1547</span>
@@ -277,7 +313,7 @@
                             <span class="RobotoRegular fs_22px pt-2 ps-2">Our Happy <br>Clients</span>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
                         <div class="d-flex">
                             <div class="num">
                                 <span class="fs_48px OswaldBold">1547</span>
@@ -289,10 +325,10 @@
             </div>
         </section>
 
-        <section class="seccion">
+        <section id="Servicios" class="seccion">
             <div class="container">
                 <div class="row">
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/maritimo.svg" alt="Servicio Internacional">
@@ -301,7 +337,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/terrestre.svg" alt="Soporte 24/7">
@@ -310,7 +346,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/Aereo.svg" alt="Rápido y Seguro">
@@ -319,7 +355,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/ferrioviario.svg" alt="Almacenaje a nivel nacional">
@@ -328,7 +364,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/consolidacion.svg" alt="Optimización de tiempos en transito">
@@ -337,7 +373,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/almacen_1.svg" alt="Custodia virtual">
@@ -346,7 +382,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/pesaje.svg" alt="Optimización de tiempos en transito">
@@ -355,7 +391,7 @@
                             <p>Trabajamos con distintos socios internacionales alrededor del mundo</p>
                         </div>
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-12 col-md-6 col-xl-3 p-1">
                         <div class="card bg-slave border-0 p-3 m-2">
                             <div class="icon-cont">
                                 <img class="w-48px" src="img/icons/aduanas.svg" alt="Custodia virtual">
@@ -371,7 +407,10 @@
         <section>
             <div class="container ">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 order-lg-2 ">
+                        <img src="img/content/camion_gps.svg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-4 order-lg-1">
                         <div class="d-flex pt-4">
                             <img  class="w-48px" src="img/icons/check_box.svg" alt="">
                             <span class="RobotoRegular fs_20px ps-2 pt-1">Seguimiento En tiempo real</span>
@@ -389,10 +428,8 @@
                             <span class="RobotoRegular fs_20px ps-2 pt-1">Detección de riesgos</span>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="img/content/camion_gps.jpg" alt="">
-                    </div>
-                    <div class="col-4 ps-3">
+                    
+                    <div class="col-12 col-lg-4 ps-3 order-lg-3">
                         <div class="d-flex pt-4">
                             <img  class="w-48px" src="img/icons/check_box.svg" alt="">
                             <span class="RobotoRegular fs_20px ps-2 pt-1">Trazabilidad 24/7</span>
@@ -421,7 +458,7 @@
             <div class="bg-gray">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 mt-4">
                             <div class="card border-secundario">
                                 <img src="img/content/Servicio_terrestre_2.jpg" alt="Servicios Terrestres">
                                 <div class="p-3">
@@ -433,7 +470,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 mt-4">
                             <div class="card border-secundario">
                                 <img src="img/content/servicio_maritimo.jpg" alt="Servicios Marítimos">
                                 <div class="p-3">
@@ -445,7 +482,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 mt-4">
                             <div class="card border-secundario">
                                 <img src="img/content/Servicio_aereo.jpg" alt="Servicios Aéreos">
                                 <div class="p-3">
@@ -471,15 +508,15 @@
                         <div class="carousel-item active">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-8 py-5">
+                                    <div class="col-12 col-lg-8 py-5">
                                         <h5 class="text-primario text-center fs_24px">La mejor solución de transporte del mundo  La profesionalidad mostrada por KGC (King Global Cargo) es verdaderamente Confiable. Cada interacción, desde la consulta inicial hasta la entrega de nuestra carga, refleja un compromiso con la calidad y la confiabilidad.</h5>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center py-5 testimonio">
-                                    <div class="col-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img  class="rounded-circle testimonial_pick" src="img/content/testimonial_pic3 1.jpg" alt="Imagen del Cliente del Comentario">
                                     </div>
-                                    <div class="col-3 pt-3">
+                                    <div class="col-12 col-lg-3 pt-3 text-center">
                                         <h4 class="">Laura Addams</h4>
                                         <span >Directora General</span>
                                     </div>
@@ -489,15 +526,15 @@
                         <div class="carousel-item">
                             <div class="container">
                                 <div class="row justify-content-center">
-                                    <div class="col-8 py-5">
+                                    <div class="col-12 col-lg-8 py-5">
                                         <h5 class="text-primario text-center fs_24px">La mejor solución de transporte del mundo La profesionalidad mostrada por KGC (King Global Cargo) es verdaderamente Confiable. Cada interacción, desde la consulta inicial hasta la entrega de nuestra carga, refleja un compromiso con la calidad y la confiabilidad.</h5>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center py-5 testimonio">
-                                    <div class="col-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img  class="rounded-circle testimonial_pick" src="img/content/testimonial_pic3 1.jpg" alt="Imagen del Cliente del Comentario">
                                     </div>
-                                    <div class="col-3 pt-3">
+                                    <div class="col-12 col-lg-3 pt-3 text-center">
                                         <h4 class="">Laura Addams</h4>
                                         <span >Directora General</span>
                                     </div>
@@ -506,16 +543,16 @@
                         </div>
                         <div class="carousel-item">
                             <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-8 py-5">
+                                <div class="row justify-content-center ">
+                                    <div class="col-12 col-lg-8 py-5">
                                         <h5 class="text-primario text-center fs_24px">La mejor solución de transporte del mundo La profesionalidad mostrada por KGC (King Global Cargo) es verdaderamente Confiable. Cada interacción, desde la consulta inicial hasta la entrega de nuestra carga, refleja un compromiso con la calidad y la confiabilidad.</h5>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center py-5 testimonio">
-                                    <div class="col-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img  class="rounded-circle testimonial_pick" src="img/content/testimonial_pic3 1.jpg" alt="Imagen del Cliente del Comentario">
                                     </div>
-                                    <div class="col-3 pt-3">
+                                    <div class="col-12 col-lg-3 pt-3 text-center">
                                         <h4 class="">Laura Addams</h4>
                                         <span >Directora General</span>
                                     </div>
@@ -528,16 +565,16 @@
         </section>
 
         
-        <section class="seccion">
+        <section id="Nosotros" class="seccion">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center pe-5">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center pe-5 mt-5">
                         <h3 class="py-3">Dispuestos a traer una nueva perspectiva.</h3>
                         <p class="py-2">Empresa fundada en el año 2021, busca siempre ofrecerte mejores herramientas y soluciones para las necesidades logísticas en las diferentes etapas de la cadena de suministro.</p>
                         <p class="py-2">Nuestra filosofía está basada en un sistema S.M.A.R.T. en donde dispondremos, no apenas nuestra simpatía pero también nuestra garantía de mejores prácticas y por ende, mejores resultados.</p>
                         <a id="" class="btn btn-primary OswaldMedium fs_20px d-flex pt-3" href="#Fomulario">Cotizar Ahora <img class="w-32px" src="img/icons/right-arrow-bk.svg" alt=""> </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 mt-5">
                         <img src="img/content/video.jpg" alt="video de King Global Cargo Internacional holding">
                         <div class="video-container">
                             <div id="boton_play" class="play-button" onclick="playVideo()">
@@ -558,7 +595,7 @@
                 <div class="row h-100">
                     <div class="col-6">
                     </div>
-                    <div class="col-6 bg-black-transparent p-5 d-flex flex-column justify-content-center" >
+                    <div class="col-12 col-lg-6 bg-black-transparent p-5 d-flex flex-column justify-content-center" >
                         <h4 class="text-white OswaldMedium fs_40px py-5 px-1">Ponte en contacto con nosotros para Asesorarte</h4>
                         <form>
                             <div class="container">
@@ -607,12 +644,12 @@
             <div class="newsletter" >
                 <div class="container" >
                     <div class="row justify-content-center position-relative">
-                        <div class="col-10 bg-secundario p-5 position-absolute t-80px">
+                        <div class="col-12 col-lg-10 bg-secundario p-5 position-absolute t-80px">
                             <div class="row">
-                                <div class="col-5">
-                                    <h3 class="text-primario fs_26px OswaldMedium">Suscríbete a nuestro newsletter <br> Para recibir actualizaciones</h3>
+                                <div class="col-12 col-lg-5 pb-3">
+                                    <h3 class="text-primario fs_26px OswaldMedium text-center text-lg-start">Suscríbete a nuestro newsletter <br> Para recibir actualizaciones</h3>
                                 </div>
-                                <div class="col-7">
+                                <div class="col-12 col-lg-7">
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Correo Electrónico" aria-label="Recipient's username" aria-describedby="button-addon2">
                                         <button class="btn btn-secondary fs_22px OswaldRegular px-3" type="button" id="button-addon2">Suscribirse</button>
@@ -626,10 +663,10 @@
             <div class="bg-footer py-5">
                 <div class="container pt_100px">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-12 col-lg-2">
                             <img src="" alt="icono de King Global Cargo Internacional Holding">
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-sm-6 col-lg-2">
                             <span class="text-white OswaldMedium fs_20px">Servicios Terrestres</span>
                             <ul class="list-footer text-white">
                                 <li>Carga refrigerada</li>
@@ -640,7 +677,7 @@
                                 <li>Manejo de cargas sobredimensionadas</li>
                             </ul>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-sm-6 col-lg-2">
                             <span class="text-white OswaldMedium fs_20px">Servicios Marítimos</span>
                             <ul class="list-footer text-white">
                                 <li>Carga contenerilizada</li>
@@ -653,7 +690,7 @@
                                 <li>Seguimiento de viaje en tiempo real</li>
                             </ul>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-sm-6 col-lg-2">
                             <span class="text-white OswaldMedium fs_20px">Servicios Aéreos</span>
                             <ul class="list-footer text-white">
                                 <li>Carga general</li>
@@ -662,7 +699,7 @@
                                 <li>Mercancías peligrosas</li>
                             </ul>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-sm-6 col-lg-2">
                             <span class="text-white OswaldMedium fs_20px">Otros Links </span>
                             <ul class="list-footer text-white">
                                 <li>Términos y Condiciones </li>

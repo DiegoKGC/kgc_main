@@ -33,7 +33,16 @@ img {
 }
 
 .seccion {
+    
     padding: 100px
+}
+
+
+@media(max-width:768px){
+    .seccion {    
+        padding: 50px
+    }
+        
 }
 
 @font-face {
@@ -303,7 +312,16 @@ img {
     background-image: url(../img/bg/bg-smart.png);
     height: 90vh
 }
-
+.bg-blackout{
+    background-color: #110f10a6;
+}
+@media(max-width:768px){
+    .bg-tacker {
+        background-image: url(../img/bg/bg-smart.png);
+        height: unset
+    }
+    
+}
 .bg-contacto {
     background-image: url(../img/bg/bg-contacto.jpg);
     height: 90vh
@@ -463,4 +481,34 @@ section {
 .testimonio .testimonial_pick {
     width: 150px;
     height: 150px
+}
+
+.cat-box{
+    min-height: 25.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media(max-width:1340px){
+    .cat-box{
+        min-height: 450px
+    }
+}
+@media(max-width:1199px){
+    .cat-box{
+        min-height: 350px
+    }
+}
+@media(max-width:992px){
+    .cat-box{
+        min-height: 400px
+    }
+}
+@media(max-width:767px){
+    .cat-box{
+        min-height: 350px
+    }
 }
