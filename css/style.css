@@ -45,6 +45,13 @@ img {
         
 }
 
+@media(max-width:576px){
+    .seccion {    
+        padding: 16px
+    }
+        
+}
+
 @font-face {
     font-family: OswaldBold;
     src: url('../fonts/Oswald/Oswald-Bold.ttf')
@@ -104,6 +111,14 @@ img {
     font-family: RobotoSemibold;
     src: url('../fonts/Roboto/Roboto-Thin.ttf')
 }
+@font-face {
+    font-family: RudaBold;
+    src: url('../fonts/Ruda/Ruda-Bold.ttf')
+}
+@font-face {
+    font-family: RudaBlack;
+    src: url('../fonts/Ruda/Ruda-Black.ttf')
+}
 
 .OswaldBold {
     font-family: OswaldBold
@@ -142,7 +157,8 @@ img {
 }
 
 .RobotoMedium {
-    font-family: RobotoMedium
+    font-family: RobotoMedium;
+    font-weight: 700;
 }
 
 .RobotoRegular {
@@ -151,6 +167,12 @@ img {
 
 .RobotoSemi {
     font-family: RobotoSemibold
+}
+.RudaBold {
+    font-family: RudaBold
+}
+.RudaBlack {
+    font-family: RudaBlack
 }
 
 .fs_16px {
@@ -215,6 +237,35 @@ img {
 
 .fs_85px {
     font-size: 5.375rem
+}
+
+@media(max-width:576px){
+    
+    .fs_64px {
+        font-size: 2rem
+    }
+    .fs_40px {
+        font-size: 1.5rem
+    }
+    .fs_32px {
+        font-size: 1.25rem
+    }
+    .fs_30px {
+        font-size: 1.2rem
+    }
+    .fs_26px {
+        font-size: 1.15rem
+    }
+    
+    .fs_24px {
+        font-size: 1.1rem
+    }
+    .fs_22px {
+        font-size: 1.1rem
+    }
+    .fs_20px {
+        font-size: 1rem
+    }
 }
 
 .text-shadow-title {
@@ -306,6 +357,10 @@ img {
 
 .bg-slave {
     background-color: var(--slave)
+}
+
+.bg-white {
+    background-color: wheat
 }
 
 .bg-tacker {
@@ -509,6 +564,26 @@ section {
 }
 @media(max-width:767px){
     .cat-box{
-        min-height: 350px
+        min-height: 350px,
+        
     }
 }
+@media(max-width:576px){    
+    .play-button {
+        top: -100px;
+    }
+    .play-button img {
+        width: 5rem !important;
+    }
+    .check_rastreo{
+        width: 1.5rem;
+    }
+    .btn_sub{
+        width: 6.5rem;
+    }
+    .bg-contacto {
+        background-image: url(../img/bg/bg-contacto.jpg);
+        height: 100%
+    }
+}
+
