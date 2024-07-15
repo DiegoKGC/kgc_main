@@ -16,7 +16,7 @@ header {
 }
 
 :root {
-    --primario: #110F10;
+    --primario: #000;
     --secundario: #FCE400;
     --master: #CA1F27;
     --slave: #F0F2F5
@@ -112,12 +112,12 @@ img {
     src: url('../fonts/Roboto/Roboto-Thin.ttf')
 }
 @font-face {
-    font-family: RudaBold;
-    src: url('../fonts/Ruda/Ruda-Bold.ttf')
+    font-family: HelveticaNeueBold;
+    src: url('../fonts/Helvetica/Bold.otf')
 }
 @font-face {
-    font-family: RudaBlack;
-    src: url('../fonts/Ruda/Ruda-Black.ttf')
+    font-family: HelveticaNeueBoldCond;
+    src: url('../fonts/Helvetica/Bold_Condensed.otf')
 }
 
 .OswaldBold {
@@ -168,13 +168,12 @@ img {
 .RobotoSemi {
     font-family: RobotoSemibold
 }
-.RudaBold {
-    font-family: RudaBold
+.HelveticaBold{
+  font-family: HelveticaNeueBold;  
 }
-.RudaBlack {
-    font-family: RudaBlack
+.HelveticaBoldcond{
+    font-family: HelveticaNeueBoldCond;
 }
-
 .fs_16px {
     font-size: 1rem
 }
@@ -363,12 +362,16 @@ img {
     background-color: wheat
 }
 
-.bg-tacker {
+.bg-hero {
     background-image: url(../img/bg/bg-smart.png);
-    height: 90vh
+    height: 90vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .bg-blackout{
-    background-color: #110f10a6;
+    background-color: #110f1074;
 }
 @media(max-width:768px){
     .bg-tacker {
@@ -416,7 +419,7 @@ img {
 }
 
 .border-secundario {
-    border: 1px solid #fce400
+    border: 1px solid var(--secundario)
 }
 
 .box-shadow-md {
@@ -435,8 +438,8 @@ img {
 
 .btn-primary {
     color: #110f10 !important;
-    background-color: #fce400 !important;
-    border-color: #fce400 !important
+    background-color: var(--secundario) !important;
+    border-color: var(--secundario) !important
 }
 
 .btn-secondary {
@@ -459,9 +462,34 @@ img {
     right: 4px;
     top: 5px
 }
+.btn-cotizacion{
+    background-color: #000;
+    border: 1px solid;
+    border-color: #fff !important;
+    width: 90%;
+    transition: all ease-in .3s;
+    color: #fff;
+    border-radius: 0;
+}
+.btn-cotizacion:hover{
+    color: #000 !important;
+    background-color: var(--secundario);
+    border-color: #000 !important;
+    width: 90%;
+}
+
+.btn-cotizacion img{
+    transition: all ease-in .3s;
+
+}
+.btn-cotizacion:hover img{
+    filter: invert(1);
+
+}
+
 
 .step {
-    border-right: 1px solid #fce400;
+    border-right: 1px solid var(--secundario);
     position: relative
 }
 
