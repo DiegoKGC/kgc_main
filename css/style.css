@@ -362,17 +362,42 @@ img {
     background-color: wheat
 }
 
-.bg-hero {
-    background-image: url(../img/bg/bg-smart.png);
-    height: 90vh; 
+.bg-hero,
+.bg-maritimo,
+.bg-aereo,
+.bg-transporte { 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
+.bg-hero {
+    background-image: url(../img/bg/bg-smart.png);
+    height: 90vh;
+}
+
+.bg-transporte {
+    background-image: url(../img/bg/terrestre.jpeg);
+    height: 90vh; 
+}
+.bg-maritimo {
+    background-image: url(../img/bg/buque.jpeg);
+    height: 90vh; 
+}
+.bg-aereo {
+    background-image: url(../img/bg/hero-slider-hero-slider3.jpeg);
+    height: 90vh; 
+}
+
 .bg-blackout{
     background-color: #110f1074;
 }
+
+.bg-tacker {
+    background-image: url(../img/bg/bg-smart.png);
+    height: 90vh
+}
+
 @media(max-width:768px){
     .bg-tacker {
         background-image: url(../img/bg/bg-smart.png);
@@ -380,6 +405,7 @@ img {
     }
     
 }
+
 .bg-contacto {
     background-image: url(../img/bg/bg-contacto.jpg);
     height: 90vh
@@ -471,12 +497,32 @@ img {
     color: #fff;
     border-radius: 0;
 }
+.btn-cotizacion_active{
+    background-color: var(--secundario);
+    border: 1px solid;
+    border-color: #000 !important;
+    width: 90%;
+    transition: all ease-in .3s;
+    color: #000 !important;
+    border-radius: 0;
+}
+.btn-cotizacion_active:hover{
+    background-color: #000;
+    border: 1px solid;
+    border-color: #fff !important;
+    width: 90%;
+    transition: all ease-in .3s;
+    color: #fff !important;
+    border-radius: 0;
+}
+
 .btn-cotizacion:hover{
     color: #000 !important;
     background-color: var(--secundario);
     border-color: #000 !important;
     width: 90%;
 }
+
 
 .btn-cotizacion img{
     transition: all ease-in .3s;
@@ -486,7 +532,15 @@ img {
     filter: invert(1);
 
 }
+.btn-cotizacion_active img{
+    filter: invert(1);
+    transition: all ease-in .3s;
 
+}
+.btn-cotizacion_active:hover img{
+    filter: unset;
+
+}
 
 .step {
     border-right: 1px solid var(--secundario);
@@ -599,7 +653,7 @@ section {
 @media(max-width:576px){    
     .play-button {
         top: -100px;
-    }
+    }s
     .play-button img {
         width: 5rem !important;
     }
@@ -615,3 +669,6 @@ section {
     }
 }
 
+.title_servicioMonitoreo{
+    height: 4rem;
+}
