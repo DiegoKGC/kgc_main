@@ -33,23 +33,19 @@ img {
 }
 
 .seccion {
-    
     padding: 100px
 }
-
 
 @media(max-width:768px){
     .seccion {    
         padding: 50px
     }
-        
 }
 
 @media(max-width:576px){
     .seccion {    
         padding: 16px
     }
-        
 }
 
 @font-face {
@@ -372,10 +368,12 @@ img {
     background-attachment: fixed;
 }
 .bg-hero {
-    background-image: url(../img/bg/bg-smart.png);
+    background-image: url(../img/bg/hero_logistic.jpg);
     height: 90vh;
 }
-
+.w-subtitle{
+    width: 50%;
+}
 .bg-transporte {
     background-image: url(../img/bg/terrestre.jpeg);
     height: 90vh; 
@@ -387,6 +385,26 @@ img {
 .bg-aereo {
     background-image: url(../img/bg/hero-slider-hero-slider3.jpeg);
     height: 90vh; 
+}
+
+@media(max-width:768px){
+    .w-subtitle{
+        width: 100%;
+    }
+    .bg-hero {
+        background-image: url(../img/bg/hero_logistic_movile.jpg);
+        height: 90vh;
+    }
+    .bg-transporte{
+        background-image: url(../img/bg/bg_terrestre_mobile.jpg);
+    }
+    .bg-aereo{
+        background-image: url(../img/bg/bg_aereo_mobile_.jpg);
+    }
+    .bg-maritimo{
+        background-image: url(../img/bg/bg_martitimo_mobile.jpg);
+    }
+
 }
 
 .bg-blackout{
@@ -439,15 +457,12 @@ img {
     list-style: none
 }
 
-
 .brightness_7 {
     filter: brightness(.7)
 }
-
 .border-secundario {
     border: 1px solid var(--secundario)
 }
-
 .box-shadow-md {
     padding-left: 5px;
     border: 1px solid #f0f2f5;
@@ -461,7 +476,6 @@ img {
     width: 11rem;
     border-radius: 0
 }
-
 .btn-primary {
     color: #110f10 !important;
     background-color: var(--secundario) !important;
@@ -572,7 +586,16 @@ img {
     right: 10px !important;
     z-index: 1
 }
+.top-box{
+    top: -9.125rem;
+}
 
+@media(max-width:768px){
+    .top-box{
+        top: -15rem;
+    }
+    
+}
 .carousel-control-prev {
     left: unset;
     bottom: 60px !important
